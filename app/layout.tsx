@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 // import { Geist, Geist_Mono } from "next/font/google";
-import { Roboto } from 'next/font/google';
+import { Poppins } from 'next/font/google';
 import "./globals.css";
 import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav";
 
@@ -14,8 +14,8 @@ import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav";
 //   subsets: ["latin"],
 // });
 
-const font = Roboto({
-  weight: ["100", "300", "400", "500", "700", "900"],
+const font = Poppins({
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
 });
 
@@ -34,8 +34,11 @@ export default function RootLayout({
       <body
         className={`${font.className} antialiased`}
       >
-        <ResponsiveNav />
-        {children}
+        <div className="min-h-screen flex flex-col justify-between">
+          <ResponsiveNav />  
+          <main className="flex-1"></main>{children}
+        </div>
+        
       </body>
     </html>
   );
