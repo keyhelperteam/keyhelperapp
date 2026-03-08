@@ -28,8 +28,8 @@ const Review = () => {
   }
 };
   return (
-    <div className='pt-16 pb-16 bg-[#fcf6fa]'>
-      <h1 className='text-2xl md:text-3xl font-bold text-center mb-8'>What Our Users Say</h1>
+    <div className='pt-16 pb-16 bg-gradient-to-r from-green-50 to-emerald-50'>
+      <h1 className='text-2xl md:text-3xl font-bold text-center mb-8 text-gray-900'>What Our Community Says</h1>
       <div className='w-[80%] mx-auto'>
         <Carousel
           arrows={false}
@@ -41,17 +41,20 @@ const Review = () => {
           showDots={true}
           removeArrowOnDeviceType={["tablet", "mobile"]}
         >
-          <div className='p-4 bg-white rounded-lg shadow-md'>
-            <p>&quot;This app has changed my life! The features are amazing and the support is top-notch.</p>
-            <h3 className='font-bold mt-2'>- User 1</h3>
+          <div className='p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow'>
+            <p className='text-gray-700 mb-3'>&quot;Finally found a way to share my travel photos and meet people with similar interests. The location tagging feature is incredible!&quot;</p>
+            <h3 className='font-bold text-gray-900'>- Sarah M.</h3>
+            <p className='text-sm text-gray-500'>Travel Photographer</p>
           </div>
-          <div className='p-4 bg-white rounded-lg shadow-md'>
-            <p>I love the user interface and the ease of use. Highly recommend!&rdquo;</p>
-            <h3 className='font-bold mt-2'>- User 2</h3>
+          <div className='p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow'>
+            <p className='text-gray-700 mb-3'>\"The community is so welcoming. I discovered amazing hidden gems near me and made new friends who share my passion for exploration.&quot;</p>
+            <h3 className='font-bold text-gray-900'>- James K.</h3>
+            <p className='text-sm text-gray-500'>Adventure Seeker</p>
           </div>
-          <div className='p-4 bg-white rounded-lg shadow-md'>
-            <p>A fantastic app with great functionality. It has everything I need.</p>
-            <h3 className='font-bold mt-2'>- User 3</h3>
+          <div className='p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow'>
+            <p className='text-gray-700 mb-3'>\"Super easy to use and the interface is beautiful. Best app for documenting and sharing my city exploration journey.&quot;</p>
+            <h3 className='font-bold text-gray-900'>- Emma L.</h3>
+            <p className='text-sm text-gray-500'>Urban Explorer</p>
           </div>
         </Carousel>
         </div>

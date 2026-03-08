@@ -3,7 +3,7 @@ import Hero from './Hero/Hero'
 import WhyChoose from './WhyChoose/WhyChoose'
 import Feature from './Feature/Feature'
 import Footer from './Footer/Footer'
-// import Review from './Review/Review';
+import Review from './Review/Review';
 
 const Home = () => {
   return (
@@ -11,7 +11,7 @@ const Home = () => {
       <Hero />
       <WhyChoose />
       <Feature />
-      {/* <Review /> */}
+      <Review />
       <Footer />
     </div>
     
