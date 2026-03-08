@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import Carousel from "react-multi-carousel";
+// @ts-expect-error missing type definitions for carousel styles
 import "react-multi-carousel/lib/styles.css";
 
 const Review = () => {
@@ -47,12 +48,12 @@ const Review = () => {
             <p className='text-sm text-gray-500'>Travel Photographer</p>
           </div>
           <div className='p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow'>
-            <p className='text-gray-700 mb-3'>\"The community is so welcoming. I discovered amazing hidden gems near me and made new friends who share my passion for exploration.&quot;</p>
+            <p className='text-gray-700 mb-3'>&quot;The community is so welcoming. I discovered amazing hidden gems near me and made new friends who share my passion for exploration.&quot;</p>
             <h3 className='font-bold text-gray-900'>- James K.</h3>
             <p className='text-sm text-gray-500'>Adventure Seeker</p>
           </div>
           <div className='p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow'>
-            <p className='text-gray-700 mb-3'>\"Super easy to use and the interface is beautiful. Best app for documenting and sharing my city exploration journey.&quot;</p>
+            <p className='text-gray-700 mb-3'>&quot;Super easy to use and the interface is beautiful. Best app for documenting and sharing my city exploration journey.&quot;</p>
             <h3 className='font-bold text-gray-900'>- Emma L.</h3>
             <p className='text-sm text-gray-500'>Urban Explorer</p>
           </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaBook, FaCog, FaDesktop, FaHeadset, FaLaptop, FaLayerGroup, FaMobileAlt, FaShieldAlt, FaMapPin } from 'react-icons/fa';
+import { FaBook, FaCog, FaDesktop, FaHeadset, FaLayerGroup, FaMobileAlt, FaShieldAlt, FaMapPin } from 'react-icons/fa';
 
 const Feature = () => {
   const features = [
