@@ -1,7 +1,6 @@
 'use client';
 import React from 'react';
 import Carousel from "react-multi-carousel";
-// @ts-expect-error missing type definitions for carousel styles
 import "react-multi-carousel/lib/styles.css";
 
 const Review = () => {
