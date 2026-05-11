@@ -1,16 +1,34 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { getTravelPlanById, TravelPlan, TravelItemModel } from '@/lib/travelPlanService';
+import { getTravelPlanById, TravelPlan } from '@/lib/travelPlanService';
+
+interface TravelItem {
+  id?: string;
+  uid?: string;
+  creatorUserId?: string;
+  creatorName?: string;
+  creatorProfileUrl?: string;
+  dayInt?: number;
+  date?: string;
+  arrivalTime?: string;
+  estimateTime?: string;
+  title?: string;
+  note?: string;
+  address?: string;
+  latitude?: number;
+  longitude?: number;
+  imageUrl?: string;
+  itemType?: string;
+  createdAt?: string;
+  isCompleted?: number;
+}
 
 interface PageProps {
   params: Promise<{ id: string }>;
 }
 
-interface TravelItem extends TravelItemModel {
-  date?: string;
-  arrivalTime?: string;
-}
+export const dynamic = 'force-dynamic';
 
 export default function TravelPlanDetailPage({ params }: PageProps) {
   const [plan, setPlan] = useState<TravelPlan | TravelItem[] | null>(null);
