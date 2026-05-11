@@ -34,9 +34,9 @@ export default function RootLayout({
       <body
         className={`${font.className} antialiased`}
       >
-        <div className="min-h-screen flex flex-col justify-between">
+        <div className="min-h-screen flex flex-col">
           <ResponsiveNav />  
-          <main className="flex-1"></main>{children}
+          <main className="flex-2 pt-20">{children}</main>
         </div>
         
       </body>
