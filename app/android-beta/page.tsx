@@ -3,10 +3,10 @@
 import { useForm } from '@formspree/react';
 import Link from 'next/link';
 
+const FORM_KEY = process.env.NEXT_PUBLIC_FORMSPREE_FORM_KEY || '';
+
 export default function AndroidBetaPage() {
-  const [state, handleSubmit] = useForm(
-    process.env.NEXT_PUBLIC_FORMSPREE_FORM_KEY!
-  );
+  const [state, handleSubmit] = useForm(FORM_KEY);
 
   if (state.succeeded) {
     return (
