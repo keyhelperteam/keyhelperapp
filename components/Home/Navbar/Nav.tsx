@@ -46,9 +46,6 @@ const Nav = ({openNav}: Props) => {
             </div>
 
             { /* Buttons */}
-            <div className='lg:flex items-center space-x-5'>
-                <button className='bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition-all duration-200'>Join now</button>
-            </div>
 
             { /* Hamburger Icon */}
             <HiBars3BottomRight

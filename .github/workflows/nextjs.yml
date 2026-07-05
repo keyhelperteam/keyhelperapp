@@ -70,11 +70,15 @@ jobs:
       - name: Build with Next.js
         env:
           NEXT_PUBLIC_BASE_PATH: /keyhelperapp
-        run: ${{ steps.detect-package-manager.outputs.runner }} next build
+        run: |
+          if [ -f .travel-plan-ids.json ]; then
+            echo "TRAVEL_PLAN_IDS=$(cat .travel-plan-ids.json)" >> $GITHUB_ENV
+          fi
+          ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: .next/server/app
 
   # Deployment job
   deploy:

@@ -11,13 +11,13 @@ const Footer = () => {
               <span className='text-3xl md:text-4xl text-green-500'>KeyHelper</span>
             </h1>
             <p className='mt-4 text-sm font-medium leading-[2rem] w-[80%] text-gray-600'>
-              keyhelper is a powerful application designed to help you manage your tasks efficiently and effectively.
+              Your all-in-one lifestyle companion — social notes, productivity tools, travel planner, finance tracker, workout timer, and on-device AI that respects your privacy.
             </p>
           </div>
           <div>
-            <h3 className='text-lg font-semibold text-gray-800'>About Us</h3>
-            <ul className='mt-4 space-y-2'>
-              <li><a href="#" className='text-blue-500 hover:underline'>Home</a></li>
+              <h3 className='text-lg font-semibold text-gray-800'>Product</h3>
+              <ul className='mt-4 space-y-2'>
+                <li><a href="#features" className='text-blue-500 hover:underline'>Features</a></li>
               {/* <li><a href="#" className='text-blue-500 hover:underline'>About Us</a></li>
               <li><a href="#" className='text-blue-500 hover:underline'>Services</a></li>
               <li><a href="#" className='text-blue-500 hover:underline'>Contact</a></li> */}
