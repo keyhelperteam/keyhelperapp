@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description:
       'Share moments, plan trips, track finances, stay productive, and get fit — all powered by an on-device AI.',
     url: baseUrl,
-    images: [{ url: `${baseUrl}/images/hero.png`, width: 700, height: 700, alt: 'KeyHelper App' }],
+    images: [{ url: `${baseUrl}/images/keyhelper_marketing_banner.png`, width: 1024, height: 1024, alt: 'KeyHelper — All-in-One Lifestyle Companion App' }],
   },
   alternates: {
     canonical: baseUrl,
