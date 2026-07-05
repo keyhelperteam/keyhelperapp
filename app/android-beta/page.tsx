@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function AndroidBetaPage() {
   const [state, handleSubmit] = useForm(
-    process.env.NEXT_PUBLIC_FORMSPREE_FORM_KEY || 'REPLACE_WITH_YOUR_FORM_KEY'
+    process.env.NEXT_PUBLIC_FORMSPREE_FORM_KEY!
   );
 
   if (state.succeeded) {
