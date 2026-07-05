@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 
@@ -21,10 +22,13 @@ const Hero = () => {
                         Share moments, plan trips, track finances, stay productive, and get fit — all powered by an on-device AI that respects your privacy. The only app you need to organize your life.
                     </p>
                     <div className='flex items-center space-x-4 mt-6'>
-                        <a href="mailto:keyhelperteam@gmail.com?subject=KeyHelper%20Android%20Registration">
-                            {/* eslint-disable-next-line @next/next/no-img-element */}
-                            <img src={`${basePath}/images/google_play_app.png`} alt="playstore" width={150} height={50} className='cursor-pointer hover:opacity-80 transition-opacity' />
-                        </a>
+                        <div className='relative inline-block'>
+                            <Link href="/android-beta">
+                                {/* eslint-disable-next-line @next/next/no-img-element */}
+                                <img src={`${basePath}/images/google_play_app.png`} alt="playstore" width={150} height={50} className='cursor-pointer hover:opacity-80 transition-opacity' />
+                            </Link>
+                            <span className='absolute -top-2 -right-2 bg-amber-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full'>Beta</span>
+                        </div>
                         <a href="https://apps.apple.com/us/app/keyhelper/id1672467977" target="_blank" rel="noopener noreferrer">
                             {/* eslint-disable-next-line @next/next/no-img-element */}
                             <img src={`${basePath}/images/apple_store_app.png`} alt="appstore" width={150} height={50} className='cursor-pointer hover:opacity-80 transition-opacity' />
