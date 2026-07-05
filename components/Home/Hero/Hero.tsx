@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import { getImagePath } from '@/lib/imagePath';
 
 const Hero = () => {
   return (
@@ -26,10 +25,10 @@ const Hero = () => {
                     { /* play store and app store image */}
                     <div className='flex items-center space-x-4 mt-6'>
                         <a href="mailto:keyhelperteam@gmail.com?subject=KeyHelper%20Android%20Registration">
-                            <Image src={getImagePath('/images/google_play_app.png')} alt="playstore" width={150} height={50} className='cursor-pointer hover:opacity-80 transition-opacity' />
+                            <Image src="/images/google_play_app.png" alt="playstore" width={150} height={50} className='cursor-pointer hover:opacity-80 transition-opacity' />
                         </a>
                         <a href="https://apps.apple.com/us/app/keyhelper/id1672467977" target="_blank" rel="noopener noreferrer">
-                            <Image src={getImagePath('/images/apple_store_app.png')} alt="appstore" width={150} height={50} className='cursor-pointer hover:opacity-80 transition-opacity' />
+                            <Image src="/images/apple_store_app.png" alt="appstore" width={150} height={50} className='cursor-pointer hover:opacity-80 transition-opacity' />
                         </a>
                     </div>
                 </div>
@@ -38,7 +37,7 @@ const Hero = () => {
 
                 {/* Image Content */}
                 <div className='hidden lg:block' data-aos="fade-left">
-                    <Image src={getImagePath('/images/hero.png')} alt="hero" width={700} height={700} />
+                    <Image src="/images/hero.png" alt="hero" width={700} height={700} />
                 </div>
             </div>
         </div>
