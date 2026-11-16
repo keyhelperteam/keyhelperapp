@@ -19,7 +19,18 @@ export default function AndroidBetaPage() {
           </div>
           <h3 className="text-xl font-bold text-gray-900 mb-2">You&apos;re on the list!</h3>
           <p className="text-gray-600">
-            We&apos;ll send an invite to your email when a spot opens up. Stay tuned!
+            We&apos;ll send an invite to your email when a spot opens up. Once your email is approved, go to Google Play to download KeyHelper Pro:
+          </p>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.fai.keyhelper.pro"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-5 inline-flex items-center justify-center w-full bg-green-600 text-white font-semibold py-3 rounded-lg hover:bg-green-700 transition"
+          >
+            Open on Google Play
+          </a>
+          <p className="text-xs text-gray-500 mt-3 break-all">
+            https://play.google.com/store/apps/details?id=com.fai.keyhelper.pro
           </p>
           <div className="mt-8">
             <Link href="/" className="text-green-600 hover:underline text-sm font-medium">
@@ -69,6 +80,21 @@ export default function AndroidBetaPage() {
               Workout timer, Pomodoro, countdowns, and real-time chat
             </li>
           </ul>
+        </div>
+
+        <div className="bg-white border border-green-200 rounded-xl p-5 mb-6">
+          <h2 className="font-semibold text-gray-900 mb-2">After your email is approved</h2>
+          <p className="text-sm text-gray-700 mb-3">
+            Once you receive approval, download KeyHelper Pro from Google Play:
+          </p>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.fai.keyhelper.pro"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-green-700 font-medium underline break-all"
+          >
+            https://play.google.com/store/apps/details?id=com.fai.keyhelper.pro
+          </a>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-4">
